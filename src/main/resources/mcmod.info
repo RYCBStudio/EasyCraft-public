@@ -1,0 +1,16 @@
+[
+{
+  "modid": "easycraft",
+  "name": "EasyCraft",
+  "description": "This is a very small mod but you can make many things.For example,you can make many,many,many tools by many,many,many ingots.This is this mod's core and main.You can add some add-ons mod for it.",
+  "version": "1.",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["RYCBStudio"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
