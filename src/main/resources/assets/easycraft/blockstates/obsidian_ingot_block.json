@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "easycraft:block/obsidian_ingot_block"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ORO",
+    "RDR",
+    "ORO"
+  ],
+
+  "key":
+  {
+    "O":
+    {
+      "item": "minecraft:obsidian"
+    },
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "D":
+    {
+      "item": "minecraft:dye",
+      "data": 4
+    }
+  },
+
+  "result":
+  {
+    "item": "easycraft:obsidian_ingot",
+    "count": 9
+  }
+}

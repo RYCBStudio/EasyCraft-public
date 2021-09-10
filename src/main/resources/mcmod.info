@@ -2,13 +2,13 @@
 {
   "modid": "easycraft",
   "name": "EasyCraft",
-  "description": "This is a very small mod but you can make many things.For example,you can make many,many,many tools by many,many,many ingots.This is this mod's core and main.You can add some add-ons mod for it.",
-  "version": "1.",
+  "description": "This is a very small mod but you can make many things.\nFor example,you can make many,many,many tools by many,many,many ingots.\nIt also add a function like Simple Leather(https://www.curseforge.com/minecraft/mc-mods/simpleleather)",
+  "version": "${version}",
   "mcversion": "1.12.2",
-  "url": "",
+  "url": "https://github.com/QYF-RYCBStudio/Easycraft",
   "updateUrl": "",
   "authorList": ["RYCBStudio"],
-  "credits": "The Forge and FML guys, for making this example",
+  "credits": "Thanks For the Dreamer Program mechanism",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

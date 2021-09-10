@@ -1,0 +1,34 @@
+// The English(American English) Translation (.lang) file
+
+
+//Items
+item.obsidian_ingot.name=Obsidian Ingot
+item.obsidian_sword=Obsidian Sword
+item.obsidian_pickaxe=Obsidian Pickaxe
+item.obsidian_axe=Obsidian Axe
+item.obsidian_hoe.name=Obsidian Hoe
+item.obsidian_shovel.name=Obsidian Shovel
+item.obsidian_shears.name=Obsidian Shears
+item.co_ingot.name=Cobalt Ingot
+item.co_axe.name=Cobalt Axe
+item.co_hoe.name=Cobalt Hoe
+item.co_pickaxe.name=Cobalt Pickaxe
+item.co_shovel.name=Cobalt Shovel
+item.co_sword.name=Cobalt Sword
+item.co_shears.name=Cobalt Shears
+item.ruby.name=Ruby
+item.ruby_axe.name=Ruby Axe
+item.ruby_hoe.name=Ruby Hoe
+item.ruby_pickaxe.name=Ruby Pickaxe
+item.ruby_shovel.name=Ruby Shovel
+item.ruby_sword.name=Ruby Sword
+item.ruby_shears.name=Ruby Shears
+
+//Blocks
+tile.obsidian_ingot_block.name=Obsidian Ingot Zipped
+
+//Entities
+entity.happy_zombie.name=Happy Zombie
+
+//Foods
+food.coca_cola.name=Coca Cola
