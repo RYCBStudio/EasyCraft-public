@@ -1,33 +1,3 @@
-// 中文的lang文件---The Chinese Translation (.lang) file
+item.gemOmega.name=OMEGA宝石
 
-
-//物品---Items
-item.obsidian_ingot.name=黑曜石锭
-item.obsidian_sword=黑曜石剑
-item.obsidian_pickaxe=黑曜石镐
-item.obsidian_axe=黑曜石斧
-item.obsidian_hoe.name=黑曜石锄
-item.obsidian_shovel.name=黑曜石铲
-item.co_ingot.name=钴锭
-item.co_axe.name=钴斧
-item.co_hoe.name=钴锄
-item.co_pickaxe.name=钴镐
-item.co_shovel.name=钴铲
-item.co_sword.name=钴剑
-item.co_shears.name=钴剪刀
-item.ruby.name=红宝石
-item.ruby_axe.name=红宝石斧
-item.ruby_hoe.name=红宝石锄
-item.ruby_pickaxe.name=红宝石镐
-item.ruby_shovel.name=红宝石铲
-item.ruby_sword.name=红宝石剑
-item.ruby_shears.name=红宝石剪刀
-
-//方块---Blocks
-tile.obsidian_ingot_block.name=压缩后的黑曜石锭
-
-//实体---Entities
-entity.happy_zombie.name=“你快乐吗”僵尸
-
-//食物---Foods
-food.coca_cola.name=可口可乐
+tile.oreOmega.name=OMEGA矿石

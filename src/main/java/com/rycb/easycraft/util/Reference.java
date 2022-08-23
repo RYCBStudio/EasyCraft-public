@@ -1,14 +1,19 @@
 package com.rycb.easycraft.util;
 
-
+/**
+ * @author RYCBStudio/Java Department
+ * <p>Create Time: 2022/7/29 16:14</p>
+ * <p>Use the IntelliJ IDEA</p>
+ * <p>Location: EasyTech/com.rycb.etech.util/Reference.java</p>
+ * <h1><center>Reference</center></h1>
+ */
 public class Reference {
-
     public static final String MOD_ID = "easycraft";
-    public static final String NAME = "Easycraft";
-    public static final String VERSION = "1.0";
-    // public static final String ACCEPTED_VERSIONS = "[1.12.2]";
-    public static final String CLIENT_PROXY_CLASS = "com.rycb.easycraft.proxy.ClientProxy";
-    public static final String COMMON_PROXY_CLASS = "com.rycb.easycraft.proxy.CommonProxy";
-
-    public static final int ENTITY_HAPPY_ZOMBIE = 130;
+    public static final String NAME = "Easy Craft";
+    public static final String VERSION = "0.0.1";
+    public static final String MC_VERSION = "1.12.2";
+    public static final String PROXY_CLIENT = "com.rycb.easycraft.proxy.ClientProxy";
+    public static final String PROXY_SERVER = "com.rycb.easycraft.proxy.CommonProxy";
+    
+    public static final int WitherKing = 120;
 }
