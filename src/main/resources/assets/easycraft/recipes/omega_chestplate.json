@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "easycraft:omega_gem"
+    }
+  },
+  "result": {
+    "item": "easycraft:omega_chestplate",
+    "count": 1
+  }
+}

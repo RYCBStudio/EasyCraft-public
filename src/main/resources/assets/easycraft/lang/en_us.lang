@@ -1,3 +1,16 @@
 item.gemOmega.name=Omega Gem
 
+item.helmetOmega.name=Omega Helmet
+item.cplateOmega.name=Omega Chestplate
+item.leggingsOmega.name=Omega Leggings
+item.bootsOmega.name=Omega Boots
+
+item.axeOmega.name=Omega Axe
+item.hoeOmega.name=Omega Hoe
+item.pickaxeOmega.name=Omega Pickaxe
+item.shovelOmega.name=Omega Shovel
+item.swordOmega.name=Omega Sword
+
 tile.oreOmega.name=Omega Ore
+
+itemGroup.ec_tab=Easy Craft

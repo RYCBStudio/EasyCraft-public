@@ -1,5 +1,6 @@
 package com.rycb.easycraft;
 
+import com.rycb.easycraft.init.ModRecipes;
 import com.rycb.easycraft.proxy.CommonProxy;
 import com.rycb.easycraft.tab.ECTab;
 import com.rycb.easycraft.util.Reference;
@@ -46,6 +47,7 @@ public class EasyCraft {
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event) {
         OreDictHandler.init();
+        ModRecipes.init();
         proxy.Init(event);
         //RegistryHandler.initRegistries();
         LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);

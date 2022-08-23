@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "easycraft:omega_gem"
+    }
+  },
+  "result": {
+    "item": "easycraft:omega_leggings",
+    "count": 1
+  }
+}

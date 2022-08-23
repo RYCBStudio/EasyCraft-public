@@ -1,3 +1,16 @@
 item.gemOmega.name=OMEGA宝石
 
 tile.oreOmega.name=OMEGA矿石
+
+item.helmetOmega.name=OMEGA头盔
+item.cplateOmega.name=OMEGA胸甲
+item.leggingsOmega.name=OMEGA护腿
+item.bootsOmega.name=OMEGA靴子
+
+item.axeOmega.name=OMEGA斧
+item.hoeOmega.name=OMEGA锄
+item.pickaxeOmega.name=OMEGA镐
+item.shovelOmega.name=OMEGA铲
+item.swordOmega.name=OMEGA剑
+
+itemGroup.ec_tab=简单工艺

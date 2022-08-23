@@ -1,8 +1,10 @@
 package com.rycb.easycraft.util.handlers;
 
 
+import com.rycb.easycraft.init.ModBlocks;
 import com.rycb.easycraft.init.ModItems;
 import com.rycb.easycraft.util.IHasModel;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -27,23 +29,18 @@ public class RegistryHandler {
             }
         }
 
-        /*
         for (Block block : ModBlocks.BLOCKS) {
             if (block instanceof IHasModel) {
                 ((IHasModel) block).registerModels();
             }
         }
     }
-    
-     */
-    
-    /*
+
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
-        TileEntityHandler.registerTileEntities();
+        //TileEntityHandler.registerTileEntities();
     }
-     */
     /*
     @SubscribeEvent
     public static void onEnchantmentRegister(RegistryEvent.Register<Enchantment> event) {
@@ -57,5 +54,4 @@ public class RegistryHandler {
         public static void initRegistries () {
 
         }*/
-    }
 }

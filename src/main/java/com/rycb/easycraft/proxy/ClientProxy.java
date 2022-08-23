@@ -14,7 +14,7 @@ import net.minecraftforge.fml.relauncher.Side;
 /**
  * @author RYCBStudio
  * Create Time: 2022/1/28
- * Location:Easy-Tech/com.rycb.etech.proxy/ClientProxy.java
+ * Location:Easy-Tech/com.rycb.easycraft.proxy/ClientProxy.java
  * Use the IntelliJ IDEA
  */
 @Mod.EventBusSubscriber(Side.CLIENT)

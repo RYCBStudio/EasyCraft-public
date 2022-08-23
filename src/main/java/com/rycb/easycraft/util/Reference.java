@@ -4,7 +4,7 @@ package com.rycb.easycraft.util;
  * @author RYCBStudio/Java Department
  * <p>Create Time: 2022/7/29 16:14</p>
  * <p>Use the IntelliJ IDEA</p>
- * <p>Location: EasyTech/com.rycb.etech.util/Reference.java</p>
+ * <p>Location: EasyTech/com.rycb.easycraft.util/Reference.java</p>
  * <h1><center>Reference</center></h1>
  */
 public class Reference {
