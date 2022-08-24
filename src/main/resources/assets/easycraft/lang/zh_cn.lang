@@ -1,6 +1,10 @@
 item.gemOmega.name=OMEGA宝石
+item.gemRuby.name=红宝石
+
+item.ingotDark.name=暗黑金属锭
 
 tile.oreOmega.name=OMEGA矿石
+tile.oreDark.name=暗黑矿石
 
 item.helmetOmega.name=OMEGA头盔
 item.cplateOmega.name=OMEGA胸甲
@@ -12,5 +16,16 @@ item.hoeOmega.name=OMEGA锄
 item.pickaxeOmega.name=OMEGA镐
 item.shovelOmega.name=OMEGA铲
 item.swordOmega.name=OMEGA剑
+
+item.helmetRuby.name=红宝石头盔
+item.cplateRuby.name=红宝石胸甲
+item.leggingsRuby.name=红宝石护腿
+item.bootsRuby.name=红宝石靴子
+
+item.axeRuby.name=红宝石斧
+item.hoeRuby.name=红宝石锄
+item.pickaxeRuby.name=红宝石镐
+item.shovelRuby.name=红宝石铲
+item.swordRuby.name=红宝石剑
 
 itemGroup.ec_tab=简单工艺

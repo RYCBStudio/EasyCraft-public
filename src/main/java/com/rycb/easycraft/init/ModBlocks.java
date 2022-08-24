@@ -19,4 +19,6 @@ public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
 
     public static final Block OMEGA_ORE = new BlockOreBase("omega", 1, Material.ROCK, EasyCraft.EC_TAB);
+
+    public static final Block DI_ORE = new BlockOreBase("di", 2, Material.ROCK, EasyCraft.EC_TAB);
 }

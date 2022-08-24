@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "ROR",
+    "RRR"
+  ],
+  "key": {
+    "O": {
+      "item": "easycraft:omega_gem"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "easycraft:ruby_gem",
+    "count": 1
+  }
+}

@@ -6,6 +6,7 @@ import com.rycb.easycraft.tab.ECTab;
 import com.rycb.easycraft.util.Reference;
 import com.rycb.easycraft.util.handlers.OreDictHandler;
 import com.rycb.easycraft.util.handlers.RegistryHandler;
+import com.rycb.easycraft.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
@@ -50,6 +51,7 @@ public class EasyCraft {
         ModRecipes.init();
         proxy.Init(event);
         //RegistryHandler.initRegistries();
+        new ModWorldGen();
         LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);
     }
 

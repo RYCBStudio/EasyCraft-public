@@ -15,5 +15,6 @@ import static com.rycb.easycraft.util.SimpleCalculator.getSimpleBurnXp;
 public class ModRecipes {
     public static void init() {
         GameRegistry.addSmelting(ModBlocks.OMEGA_ORE, new ItemStack(ModItems.OMEGA_GEM, 1), getSimpleBurnXp());
+        GameRegistry.addSmelting(ModBlocks.DI_ORE, new ItemStack(ModItems.DARK_INGOT, 1), getSimpleBurnXp());
     }
 }

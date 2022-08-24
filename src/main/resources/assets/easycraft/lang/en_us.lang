@@ -1,4 +1,7 @@
 item.gemOmega.name=Omega Gem
+item.gemRuby.name=Ruby
+
+item.ingotDark.name=Dark Ingot
 
 item.helmetOmega.name=Omega Helmet
 item.cplateOmega.name=Omega Chestplate
@@ -11,6 +14,18 @@ item.pickaxeOmega.name=Omega Pickaxe
 item.shovelOmega.name=Omega Shovel
 item.swordOmega.name=Omega Sword
 
+item.helmetRuby.name=Ruby Helmet
+item.cplateRuby.name=Ruby Chestplate
+item.leggingsRuby.name=Ruby Leggings
+item.bootsRuby.name=Ruby Boots
+
+item.axeRuby.name=Ruby Axe
+item.hoeRuby.name=Ruby Hoe
+item.pickaxeRuby.name=Ruby Pickaxe
+item.shovelRuby.name=Ruby Shovel
+item.swordRuby.name=Ruby Sword
+
 tile.oreOmega.name=Omega Ore
+tile.oreDark.name=Dark Ore
 
 itemGroup.ec_tab=Easy Craft

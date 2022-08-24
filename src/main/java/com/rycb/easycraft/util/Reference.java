@@ -11,9 +11,7 @@ public class Reference {
     public static final String MOD_ID = "easycraft";
     public static final String NAME = "Easy Craft";
     public static final String VERSION = "0.0.1";
-    public static final String MC_VERSION = "1.12.2";
+    public static final String MC_VERSION = "[1.12,1.12.2]";
     public static final String PROXY_CLIENT = "com.rycb.easycraft.proxy.ClientProxy";
     public static final String PROXY_SERVER = "com.rycb.easycraft.proxy.CommonProxy";
-    
-    public static final int WitherKing = 120;
 }

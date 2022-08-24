@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "I I",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "easycraft:ruby_gem"
+    }
+  },
+  "result": {
+    "item": "easycraft:ruby_chestplate",
+    "count": 1
+  }
+}
