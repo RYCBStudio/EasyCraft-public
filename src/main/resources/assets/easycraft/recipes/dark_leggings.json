@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "easycraft:dark_ingot"
+    }
+  },
+  "result": {
+    "item": "easycraft:dark_leggings",
+    "count": 1
+  }
+}

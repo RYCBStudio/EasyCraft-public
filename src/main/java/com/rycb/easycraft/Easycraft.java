@@ -28,7 +28,6 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class EasyCraft {
     private static final Logger LOGGER = LogManager.getLogger();
-
     @Mod.Instance(Reference.MOD_ID)
     public static EasyCraft instance;
     @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
@@ -39,25 +38,54 @@ public class EasyCraft {
         FluidRegistry.enableUniversalBucket();
     }
 
+    Class<?> EasyTech = null;
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        try {
+            EasyTech = Class.forName("com.rycb.etech.EasyTech");
+        } catch (Exception ignored) {
+        }
         proxy.preInit(event);
         LOGGER.info("{} for Minecraft {} is pre-initializing", Reference.NAME, Reference.MC_VERSION);
+//        if (EasyTech != null) {
+//            LOGGER.fatal("[{}] [First Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+//            LOGGER.fatal("[{}] [First Warning] The game will crash on loading phase 3.", "EasyCraft");
+//        }
     }
 
     @Mod.EventHandler
-    public void Init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event) {
+        try {
+            EasyTech = Class.forName("com.rycb.etech.EasyTech");
+        } catch (Exception ignored) {
+        }
         OreDictHandler.init();
         ModRecipes.init();
         proxy.Init(event);
-        //RegistryHandler.initRegistries();
+        RegistryHandler.initRegistries();
         new ModWorldGen();
         LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);
+//        if (EasyTech != null) {
+//            LOGGER.fatal("[{}] [Second Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+//            LOGGER.fatal("[{}] [Second Warning] The game will crash on loading phase 3.", "EasyCraft");
+//        }
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
+    public void postInit(FMLPostInitializationEvent event) throws FindETException {
         proxy.postInit(event);
         LOGGER.info("{} for Minecraft {} is post-initializing", Reference.NAME, Reference.MC_VERSION);
+//        if (EasyTech != null) {
+//            LOGGER.fatal("[{}] [LAST Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+//            LOGGER.fatal("[{}] [LAST Warning] The game will crash on loading phase 3.", "EasyCraft");
+//            throw new FindETException("Find EasyTech Mod. It can cause the game CRASH!\n\tDon't report to the authors. They will NOT fix it.");
+//        }
+    }
+}
+
+class FindETException extends Exception {
+    public FindETException(String msg) {
+        super(msg);
     }
 }

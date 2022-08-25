@@ -3,24 +3,37 @@ item.gemRuby.name=红宝石
 
 item.ingotDark.name=暗黑金属锭
 
+item.dark_fuel.name=暗黑燃料
+
 tile.oreOmega.name=OMEGA矿石
 tile.oreDark.name=暗黑矿石
+tile.dark_fuel_block.name=暗黑燃料块
 
 item.helmetOmega.name=OMEGA头盔
 item.cplateOmega.name=OMEGA胸甲
 item.leggingsOmega.name=OMEGA护腿
 item.bootsOmega.name=OMEGA靴子
+item.helmetDark.name=暗黑头盔
+item.cplateDark.name=暗黑胸甲
+item.leggingsDark.name=暗黑护腿
+item.bootsDark.name=暗黑靴子
 
 item.axeOmega.name=OMEGA斧
 item.hoeOmega.name=OMEGA锄
 item.pickaxeOmega.name=OMEGA镐
 item.shovelOmega.name=OMEGA铲
 item.swordOmega.name=OMEGA剑
+item.axeDark.name=暗黑斧
+item.hoeDark.name=暗黑锄
+item.pickaxeDark.name=暗黑镐
+item.shovelDark.name=暗黑铲
+item.swordDark.name=暗黑剑
 
 item.helmetRuby.name=红宝石头盔
 item.cplateRuby.name=红宝石胸甲
 item.leggingsRuby.name=红宝石护腿
 item.bootsRuby.name=红宝石靴子
+
 
 item.axeRuby.name=红宝石斧
 item.hoeRuby.name=红宝石锄

@@ -39,6 +39,18 @@ public class BlockOreBase extends Block implements IHasModel {
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
+    public BlockOreBase(String name, @Nullable Integer harvestLvl, float hardness, Material material, CreativeTabs tab) {
+        super(material);
+        setUnlocalizedName("ore" + toUpper(name));
+        setRegistryName(toLower(name) + "_ore");
+        setHardness(hardness);
+        setCreativeTab(tab);
+        if (harvestLvl == null) setHarvestLevel("pickaxe", 1);
+        else setHarvestLevel("pickaxe", harvestLvl > 0 ? harvestLvl : 1);
+        ModBlocks.BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
+
     @Override
     public void registerModels() {
         EasyCraft.proxy.registerItemRender(Item.getItemFromBlock(this), 0, "inventory");

@@ -6,8 +6,10 @@ import com.rycb.easycraft.init.ModItems;
 import com.rycb.easycraft.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -47,11 +49,21 @@ public class RegistryHandler {
         event.getRegistry().registerAll(ModEnchantments.ENCHANTNENTS.toArray(new Enchantment[0]));
     }
 
+     */
 
-        public static void preInitRegistries () {
-        }
+    @SubscribeEvent
+    public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event){
+        ItemStack itemstack = event.getItemStack();
+        if (itemstack.getItem() == ModItems.DARK_FUEL)
+            event.setBurnTime(4532);
+        else if (itemstack.getItem() == new ItemStack(ModBlocks.DARK_FUEL_BLOCK,1).getItem())
+            event.setBurnTime(45320);
+    }
 
-        public static void initRegistries () {
+    public static void preInitRegistries(){
 
-        }*/
+    }
+    public static void initRegistries () {
+
+    }
 }

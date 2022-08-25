@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DCD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "easycraft:dark_ingot"
+    }
+  },
+  "result": {
+    "item": "easycraft:dark_fuel",
+    "count": 1
+  }
+}

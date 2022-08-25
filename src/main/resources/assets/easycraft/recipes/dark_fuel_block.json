@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "easycraft:dark_coal"
+    }
+  },
+  "result": {
+    "item": "easycraft:dark_fuel_block",
+    "count": 1
+  }
+}

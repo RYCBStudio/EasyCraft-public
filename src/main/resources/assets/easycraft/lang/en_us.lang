@@ -3,6 +3,8 @@ item.gemRuby.name=Ruby
 
 item.ingotDark.name=Dark Ingot
 
+item.dark_fuel.name=Dark Fuel
+
 item.helmetOmega.name=Omega Helmet
 item.cplateOmega.name=Omega Chestplate
 item.leggingsOmega.name=Omega Leggings
@@ -18,14 +20,24 @@ item.helmetRuby.name=Ruby Helmet
 item.cplateRuby.name=Ruby Chestplate
 item.leggingsRuby.name=Ruby Leggings
 item.bootsRuby.name=Ruby Boots
+item.helmetDark.name=Dark Helmet
+item.cplateDark.name=Dark Chestplate
+item.leggingsDark.name=Dark Leggings
+item.bootsDark.name=Dark Boots
 
 item.axeRuby.name=Ruby Axe
 item.hoeRuby.name=Ruby Hoe
 item.pickaxeRuby.name=Ruby Pickaxe
 item.shovelRuby.name=Ruby Shovel
 item.swordRuby.name=Ruby Sword
+item.axeDark.name=Dark Axe
+item.hoeDark.name=Dark Hoe
+item.pickaxeDark.name=Dark Pickaxe
+item.shovelDark.name=Dark Shovel
+item.swordDark.name=Dark Sword
 
 tile.oreOmega.name=Omega Ore
 tile.oreDark.name=Dark Ore
+tile.dark_fuel_block.name=Block of Dark Fuel
 
 itemGroup.ec_tab=Easy Craft
