@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "icon": {
+      "item": "easycraft:sculk_ingot"
+    },
+    "title": {
+      "translate": "advancements.ec.haveSculkIngot.title"
+    },
+    "description": {
+      "translate": "advancements.ec.haveSculkIngot.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "have_sculk_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "item": {
+          "item": "easycraft:sculk_ingot"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

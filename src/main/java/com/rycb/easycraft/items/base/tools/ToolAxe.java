@@ -16,13 +16,24 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
  */
 public class ToolAxe extends ItemAxe implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ToolAxe(ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
         super(material, 9.0f, -2.5f);
         setUnlocalizedName("axe" + toUpper(name));
         setRegistryName(toLower(name) + "_axe");
         setCreativeTab(tab);
+        this.rarity = rarity;
+        ModItems.ITEMS.add(this);
+    }
+
+    public ToolAxe(boolean isUnbreakable, ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
+        super(material, 9.0f, -2.5f);
+        setUnlocalizedName("axe" + toUpper(name));
+        setRegistryName(toLower(name) + "_axe");
+        setCreativeTab(tab);
+        if (isUnbreakable) setMaxDamage(0);
+        setNoRepair();
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
     }

@@ -52,18 +52,19 @@ public class RegistryHandler {
      */
 
     @SubscribeEvent
-    public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event){
+    public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
         ItemStack itemstack = event.getItemStack();
         if (itemstack.getItem() == ModItems.DARK_FUEL)
             event.setBurnTime(4532);
-        else if (itemstack.getItem() == new ItemStack(ModBlocks.DARK_FUEL_BLOCK,1).getItem())
+        else if (itemstack.getItem() == new ItemStack(ModBlocks.DARK_FUEL_BLOCK, 1).getItem())
             event.setBurnTime(45320);
     }
 
-    public static void preInitRegistries(){
+    public static void preInitRegistries() {
 
     }
-    public static void initRegistries () {
+
+    public static void initRegistries() {
 
     }
 }

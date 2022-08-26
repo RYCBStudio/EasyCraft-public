@@ -6,6 +6,7 @@ import com.rycb.easycraft.items.base.ItemFuelBase;
 import com.rycb.easycraft.items.base.ItemGemBase;
 import com.rycb.easycraft.items.base.ItemIngotBase;
 import com.rycb.easycraft.items.base.tools.*;
+import com.rycb.easycraft.items.single.OmegaShield;
 import com.rycb.easycraft.util.Reference;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -35,12 +36,14 @@ public class ModItems {
 
     public static final Item DARK_FUEL = new ItemFuelBase("dark_fuel", EasyCraft.EC_TAB, UNCOMMON);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_OMEGA = EnumHelper.addArmorMaterial("omega", Reference.MOD_ID + ":omega", 44, new int[]{5, 9, 15, 7}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.5f);
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("ruby", Reference.MOD_ID + ":ruby", 34, new int[]{4, 8, 12, 5}, 57, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.5f);
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_DARK = EnumHelper.addArmorMaterial("dark", Reference.MOD_ID + ":dark", 56, new int[]{6, 10, 16, 8}, 45, SoundEvents.BLOCK_GLASS_BREAK, 6.4f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_OMEGA = EnumHelper.addArmorMaterial("omega", Reference.MOD_ID + ":omega", 2436, new int[]{5, 9, 15, 7}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.5f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("ruby", Reference.MOD_ID + ":ruby", 3245, new int[]{4, 8, 12, 5}, 57, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.5f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_DARK = EnumHelper.addArmorMaterial("dark", Reference.MOD_ID + ":dark", 4572, new int[]{6, 10, 16, 8}, 45, SoundEvents.BLOCK_GLASS_BREAK, 6.4f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_SCULK = EnumHelper.addArmorMaterial("sculk", Reference.MOD_ID + ":sculk", 546542355, new int[]{16384, 419430, 16777216, 10485764}, 2346897, SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 3243.54f);
     public static final Item.ToolMaterial TOOL_MATERIAL_OMEGA = EnumHelper.addToolMaterial("omega", 2, 8357, 5.0f, 7.0f, 23);
     public static final Item.ToolMaterial TOOL_MATERIAL_DARK = EnumHelper.addToolMaterial("dark", 4, 496424, 12.5f, 10.987f, 768);
     public static final Item.ToolMaterial TOOL_MATERIAL_RUBY = EnumHelper.addToolMaterial("ruby", 3, 46385, 6.44f, 9.0f, 24);
+    public static final Item.ToolMaterial TOOL_MATERIAL_SCULK = EnumHelper.addToolMaterial("sculk", 10, 167775216, 16777216.16777216f, 67108864.67108864f, 67108864);
 
     public static final Item OMEGA_AXE = new ToolAxe(TOOL_MATERIAL_OMEGA, "omega", EasyCraft.EC_TAB, UNCOMMON);
     public static final Item OMEGA_PICKAXE = new ToolPickaxe(TOOL_MATERIAL_OMEGA, "omega", EasyCraft.EC_TAB, UNCOMMON);
@@ -72,9 +75,20 @@ public class ModItems {
     public static final Item DARK_HOE = new ToolHoe(TOOL_MATERIAL_DARK, "dark", EasyCraft.EC_TAB, RARE);
     public static final Item DARK_SHOVEL = new ToolShovel(TOOL_MATERIAL_DARK, "dark", EasyCraft.EC_TAB, RARE);
 
-    
+    public static final Item SCULK_HELMET = new ArmorBase(true, ARMOR_MATERIAL_SCULK, 1, EntityEquipmentSlot.HEAD, "helmetSculk", "sculk_helmet", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_CHESTPLATE = new ArmorBase(true, ARMOR_MATERIAL_SCULK, 1, EntityEquipmentSlot.CHEST, "cplateSculk", "sculk_chestplate", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_LEGGINGS = new ArmorBase(true, ARMOR_MATERIAL_SCULK, 2, EntityEquipmentSlot.LEGS, "leggingsSculk", "sculk_leggings", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_BOOTS = new ArmorBase(true, ARMOR_MATERIAL_SCULK, 1, EntityEquipmentSlot.FEET, "bootsSculk", "sculk_boots", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_AXE = new ToolAxe(true, TOOL_MATERIAL_SCULK, "Sculk", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_PICKAXE = new ToolPickaxe(true, TOOL_MATERIAL_SCULK, "Sculk", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_SWORD = new ToolSword(true, TOOL_MATERIAL_SCULK, "Sculk", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_HOE = new ToolHoe(true, TOOL_MATERIAL_SCULK, "Sculk", EasyCraft.EC_TAB, EPIC);
+    public static final Item SCULK_SHOVEL = new ToolShovel(true, TOOL_MATERIAL_SCULK, "Sculk", EasyCraft.EC_TAB, EPIC);
+
+    public static final Item OMEGA_SHIELD = new OmegaShield();
+
     public static final Item OMEGA_GEM = new ItemGemBase("omega", EasyCraft.EC_TAB, 64, UNCOMMON);
     public static final Item RUBY = new ItemGemBase("ruby", EasyCraft.EC_TAB, 64, RARE);
     public static final Item DARK_INGOT = new ItemIngotBase("Dark", "dark", EasyCraft.EC_TAB, UNCOMMON);
-
+    public static final Item SCULK_INGOT = new ItemIngotBase("Sculk", "sculk", EasyCraft.EC_TAB, EPIC);
 }

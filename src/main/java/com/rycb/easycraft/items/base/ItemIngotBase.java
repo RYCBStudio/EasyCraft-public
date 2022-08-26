@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemIngotBase extends Item implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ItemIngotBase(String UnlocalizedName, String RegistryName, CreativeTabs tab, EnumRarity rarity) {
         setUnlocalizedName("ingot" + UnlocalizedName);

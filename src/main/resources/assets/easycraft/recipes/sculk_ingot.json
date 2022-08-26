@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NDN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "easycraft:dark_ingot"
+    }
+  },
+  "result": {
+    "item": "easycraft:sculk_ingot",
+    "count": 1
+  }
+}

@@ -3,9 +3,7 @@ package com.rycb.easycraft.items.base.tools;
 import com.rycb.easycraft.EasyCraft;
 import com.rycb.easycraft.init.ModItems;
 import com.rycb.easycraft.util.IHasModel;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
@@ -15,7 +13,7 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
 
 public class ToolHoe extends ItemHoe implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ToolHoe(ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
         super(material);
@@ -24,6 +22,17 @@ public class ToolHoe extends ItemHoe implements IHasModel {
         setCreativeTab(tab);
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
+    }
+
+    public ToolHoe(boolean isUnbreakable, ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
+        super(material);
+        setUnlocalizedName("hoe" + toUpper(name));
+        setRegistryName(toLower(name) + "_hoe");
+        setCreativeTab(tab);
+        this.rarity = rarity;
+        ModItems.ITEMS.add(this);
+        if (isUnbreakable) setMaxDamage(0);
+        setNoRepair();
     }
 
     public ToolHoe(ToolMaterial material, String name, CreativeTabs tab) {

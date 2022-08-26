@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemBasicBase extends Item implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     /**
      * @param UnlocalizedName 未初始化名

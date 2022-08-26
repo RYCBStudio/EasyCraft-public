@@ -13,7 +13,7 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
 
 public class ToolPickaxe extends ItemPickaxe implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ToolPickaxe(ToolMaterial material, String name, CreativeTabs tab) {
         super(material);
@@ -31,6 +31,17 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel {
         setCreativeTab(tab);
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
+    }
+
+    public ToolPickaxe(boolean isUnbreakable, ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
+        super(material);
+        setUnlocalizedName("pickaxe" + toUpper(name));
+        setRegistryName(toLower(name) + "_pickaxe");
+        setCreativeTab(tab);
+        this.rarity = rarity;
+        ModItems.ITEMS.add(this);
+        if (isUnbreakable) setMaxDamage(0);
+        setNoRepair();
     }
 
     @Override

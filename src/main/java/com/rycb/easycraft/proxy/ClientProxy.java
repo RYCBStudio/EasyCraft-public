@@ -23,22 +23,22 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
     }
-    
+
     @Override
     public void Init(FMLInitializationEvent event) {
         super.Init(event);
     }
-    
+
     @Override
     public void postInit(FMLPostInitializationEvent event) {
         super.postInit(event);
     }
-    
+
     @Override
     public void registerItemRender(Item item, int meta, String id) {
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
     }
-    
+
     @Override
     public EntityPlayer getPlayerClient() {
         return Minecraft.getMinecraft().player;

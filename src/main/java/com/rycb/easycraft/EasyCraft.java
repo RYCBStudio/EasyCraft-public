@@ -14,8 +14,15 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+enum Situation {
+    FIRST,
+    SECOND,
+    LAST
+}
 
 /**
  * @author RYCBStudio/Java Department
@@ -38,49 +45,59 @@ public class EasyCraft {
         FluidRegistry.enableUniversalBucket();
     }
 
-    Class<?> EasyTech = null;
+    static Class<?> EasyTech = null;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event) throws FindETException {
         try {
             EasyTech = Class.forName("com.rycb.etech.EasyTech");
         } catch (Exception ignored) {
         }
         proxy.preInit(event);
         LOGGER.info("{} for Minecraft {} is pre-initializing", Reference.NAME, Reference.MC_VERSION);
-//        if (EasyTech != null) {
-//            LOGGER.fatal("[{}] [First Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
-//            LOGGER.fatal("[{}] [First Warning] The game will crash on loading phase 3.", "EasyCraft");
-//        }
+//        findET(Situation.FIRST);
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event) {
-        try {
-            EasyTech = Class.forName("com.rycb.etech.EasyTech");
-        } catch (Exception ignored) {
-        }
+    public void init(FMLInitializationEvent event) throws FindETException {
         OreDictHandler.init();
         ModRecipes.init();
         proxy.Init(event);
         RegistryHandler.initRegistries();
-        new ModWorldGen();
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 2);
         LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);
-//        if (EasyTech != null) {
-//            LOGGER.fatal("[{}] [Second Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
-//            LOGGER.fatal("[{}] [Second Warning] The game will crash on loading phase 3.", "EasyCraft");
-//        }
+//        findET(Situation.SECOND);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) throws FindETException {
         proxy.postInit(event);
         LOGGER.info("{} for Minecraft {} is post-initializing", Reference.NAME, Reference.MC_VERSION);
-//        if (EasyTech != null) {
-//            LOGGER.fatal("[{}] [LAST Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
-//            LOGGER.fatal("[{}] [LAST Warning] The game will crash on loading phase 3.", "EasyCraft");
-//            throw new FindETException("Find EasyTech Mod. It can cause the game CRASH!\n\tDon't report to the authors. They will NOT fix it.");
-//        }
+//        findET(Situation.LAST);
+    }
+
+    /**
+     * @deprecated
+     */
+    private static void findET(Situation situation) throws FindETException {
+        switch (situation) {
+            case FIRST:
+                if (EasyTech != null) {
+                    LOGGER.fatal("[{}] [FIRST Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+                    LOGGER.fatal("[{}] [FIRST Warning] The game will crash on loading phase 3.", "EasyCraft");
+                }
+            case SECOND:
+                if (EasyTech != null) {
+                    LOGGER.fatal("[{}] [SECOND Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+                    LOGGER.fatal("[{}] [SECOND Warning] The game will crash on loading phase 3.", "EasyCraft");
+                }
+            case LAST:
+                if (EasyTech != null) {
+                    LOGGER.fatal("[{}] [LAST Warning] Find EasyTech Mod. It can cause the game CRASH!", "EasyCraft");
+                    LOGGER.fatal("[{}] [LAST Warning] The game will crash on loading phase 3.", "EasyCraft");
+                    throw new FindETException("Find EasyTech Mod. It can cause the game CRASH!\n\tDon't report to the authors. They will NOT fix it.");
+                }
+        }
     }
 }
 

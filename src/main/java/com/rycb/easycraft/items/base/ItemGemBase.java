@@ -21,7 +21,8 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
  * <h1><center>ItemGemBase</center></h1>
  */
 public class ItemGemBase extends Item implements IHasModel {
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
+
     /**
      * @param name 物品名字
      * @param tab  创造模式物品栏

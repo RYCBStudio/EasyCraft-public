@@ -19,7 +19,7 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
  */
 public class ItemFuelBase extends ItemBasicBase implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ItemFuelBase(String name, CreativeTabs tab) {
         super(toUpper(name), toLower(name), tab);

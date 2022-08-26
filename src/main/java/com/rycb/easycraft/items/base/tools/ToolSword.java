@@ -13,7 +13,7 @@ import static com.rycb.easycraft.util.SimpleCalculator.toUpper;
 
 public class ToolSword extends ItemSword implements IHasModel {
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ToolSword(ToolMaterial material, String name, CreativeTabs tab) {
         super(material);
@@ -31,6 +31,18 @@ public class ToolSword extends ItemSword implements IHasModel {
         setCreativeTab(tab);
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
+
+    }
+
+    public ToolSword(boolean isUnbreakable, ToolMaterial material, String name, CreativeTabs tab, EnumRarity rarity) {
+        super(material);
+        setUnlocalizedName("sword" + toUpper(name));
+        setRegistryName(toLower(name) + "_sword");
+        setCreativeTab(tab);
+        this.rarity = rarity;
+        ModItems.ITEMS.add(this);
+        if (isUnbreakable) setMaxDamage(0);
+        setNoRepair();
     }
 
     @Override

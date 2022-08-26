@@ -2,12 +2,14 @@ item.gemOmega.name=OMEGA宝石
 item.gemRuby.name=红宝石
 
 item.ingotDark.name=暗黑金属锭
+item.ingotSculk.name=幽匿锭
 
 item.dark_fuel.name=暗黑燃料
 
 tile.oreOmega.name=OMEGA矿石
 tile.oreDark.name=暗黑矿石
 tile.dark_fuel_block.name=暗黑燃料块
+tile.sculk.name=幽匿块
 
 item.helmetOmega.name=OMEGA头盔
 item.cplateOmega.name=OMEGA胸甲
@@ -34,6 +36,15 @@ item.cplateRuby.name=红宝石胸甲
 item.leggingsRuby.name=红宝石护腿
 item.bootsRuby.name=红宝石靴子
 
+item.helmetSculk.name=幽匿头盔
+item.cplateSculk.name=幽匿胸甲
+item.leggingsSculk.name=幽匿护腿
+item.bootsSculk.name=幽匿靴子
+item.axeSculk.name=幽匿斧
+item.hoeSculk.name=幽匿锄
+item.pickaxeSculk.name=幽匿镐
+item.shovelSculk.name=幽匿铲
+item.swordSculk.name=幽匿剑
 
 item.axeRuby.name=红宝石斧
 item.hoeRuby.name=红宝石锄
@@ -42,3 +53,8 @@ item.shovelRuby.name=红宝石铲
 item.swordRuby.name=红宝石剑
 
 itemGroup.ec_tab=简单工艺
+
+advancements.ec.haveSculkIngot.title=1.19时代来临了！
+advancements.ec.haveSculkIngot.descr=获得一个幽匿锭
+advancements.ec.haveSculk.title=这太肝了!
+advancements.ec.haveSculk.descr=这游戏太肝了！        拥有一块幽匿块.

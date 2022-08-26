@@ -49,7 +49,7 @@ public class BlockBase extends Block implements IHasModel {
         setCreativeTab(tab);
         setRegistryName(name);
         setHarvestLevel("pickaxe", harvestLvl > 0 ? harvestLvl : 1);
-        setHardness(hardness>1.0f?hardness:1.5f);
+        setHardness(hardness > 1.0f ? hardness : 1.5f);
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }

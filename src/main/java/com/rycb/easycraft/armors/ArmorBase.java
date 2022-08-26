@@ -12,13 +12,23 @@ import net.minecraft.item.ItemStack;
 public class ArmorBase extends ItemArmor implements IHasModel {
 
 
-    private EnumRarity rarity;
+    private final EnumRarity rarity;
 
     public ArmorBase(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String UnlocalizedName, String RegistryName, CreativeTabs tab, EnumRarity rarity) {
         super(materialIn, renderIndexIn, equipmentSlotIn);
         setUnlocalizedName(UnlocalizedName);
         setCreativeTab(tab);
         setRegistryName(RegistryName);
+        this.rarity = rarity;
+        ModItems.ITEMS.add(this);
+    }
+
+    public ArmorBase(boolean isUnbreakable, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String UnlocalizedName, String RegistryName, CreativeTabs tab, EnumRarity rarity) {
+        super(materialIn, renderIndexIn, equipmentSlotIn);
+        setUnlocalizedName(UnlocalizedName);
+        setCreativeTab(tab);
+        setRegistryName(RegistryName);
+        if (isUnbreakable) setNoRepair();
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
     }

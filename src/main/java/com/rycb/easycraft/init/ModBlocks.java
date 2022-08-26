@@ -3,8 +3,8 @@ package com.rycb.easycraft.init;
 import com.rycb.easycraft.EasyCraft;
 import com.rycb.easycraft.blocks.base.BlockBase;
 import com.rycb.easycraft.blocks.base.BlockOreBase;
+import com.rycb.easycraft.blocks.single.Sculk;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockRedstoneOre;
 import net.minecraft.block.material.Material;
 
 import java.util.ArrayList;
@@ -22,7 +22,9 @@ public class ModBlocks {
 
     public static final Block OMEGA_ORE = new BlockOreBase("omega", 1, 4.4f, Material.ROCK, EasyCraft.EC_TAB);
 
-    public static final Block DARK_ORE = new BlockOreBase("dark", 2,2.3f , Material.ROCK, EasyCraft.EC_TAB);
+    public static final Block DARK_ORE = new BlockOreBase("dark", 2, 2.3f, Material.ROCK, EasyCraft.EC_TAB);
 
     public static final Block DARK_FUEL_BLOCK = new BlockBase("dark_fuel_block", 3, 3.4f, Material.IRON, EasyCraft.EC_TAB);
+
+    public static final Block SCULK = new Sculk();
 }

@@ -2,6 +2,7 @@ item.gemOmega.name=Omega Gem
 item.gemRuby.name=Ruby
 
 item.ingotDark.name=Dark Ingot
+item.ingotSculk.name=Sculk Ingot
 
 item.dark_fuel.name=Dark Fuel
 
@@ -36,8 +37,24 @@ item.pickaxeDark.name=Dark Pickaxe
 item.shovelDark.name=Dark Shovel
 item.swordDark.name=Dark Sword
 
+item.helmetSculk.name=Sculk Helmet
+item.cplateSculk.name=Sculk Chestplate
+item.leggingsSculk.name=Sculk Leggings
+item.bootsSculk.name=Sculk Boots
+item.axeSculk.name=Sculk Axe
+item.hoeSculk.name=Sculk Hoe
+item.pickaxeSculk.name=Sculk Pickaxe
+item.shovelSculk.name=Sculk Shovel
+item.swordSculk.name=Sculk Sword
+
 tile.oreOmega.name=Omega Ore
 tile.oreDark.name=Dark Ore
 tile.dark_fuel_block.name=Block of Dark Fuel
+tile.sculk.name=Sculk
 
 itemGroup.ec_tab=Easy Craft
+
+advancements.ec.haveSculkIngot.title=1.19 era!
+advancements.ec.haveSculkIngot.descr=Have a sculk ingot.
+advancements.ec.haveSculk.title=This is too grind!
+advancements.ec.haveSculk.descr=This game is too grind.           Have a sculk.
