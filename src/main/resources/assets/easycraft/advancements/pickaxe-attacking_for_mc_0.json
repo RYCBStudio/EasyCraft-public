@@ -1,0 +1,354 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.ec.pa.title"
+    },
+    "description": {
+      "translate": "advancements.ec.pa.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/iron_tools",
+  "criteria": {
+    "cave_spider": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "cave_spider"
+        }
+      }
+    },
+    "spider": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "spider"
+        }
+      }
+    },
+    "zombie_pigman": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "zombie_pigman"
+        }
+      }
+    },
+    "enderman": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "enderman"
+        }
+      }
+    },
+    "polar_bear": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "polar_bear"
+        }
+      }
+    },
+    "blaze": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "blaze"
+        }
+      }
+    },
+    "creeper": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "creeper"
+        }
+      }
+    },
+    "evoker": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "evocation_illager"
+        }
+      }
+    },
+    "ghast": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "ghast"
+        }
+      }
+    },
+    "guardian": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "guardian"
+        }
+      }
+    },
+    "husk": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "husk"
+        }
+      }
+    },
+    "magma_cube": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "magma_cube"
+        }
+      }
+    },
+    "shulker": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "shulker"
+        }
+      }
+    },
+    "silverfish": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "silverfish"
+        }
+      }
+    },
+    "skeleton": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "skeleton"
+        }
+      }
+    },
+    "slime": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "slime"
+        }
+      }
+    },
+    "stray": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "stray"
+        }
+      }
+    },
+    "vindicator": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "vindication_illager"
+        }
+      }
+    },
+    "witch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "witch"
+        }
+      }
+    },
+    "wither_skeleton": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "wither_skeleton"
+        }
+      }
+    },
+    "zombie": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "zombie"
+        }
+      }
+    },
+    "zombie_villager": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "direct_entity": {
+            "type": "wooden_pickaxe"
+          }
+        },
+        "entity": {
+          "type": "zombie_villager"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cave_spider",
+      "spider",
+      "zombie_pigman",
+      "enderman",
+      "polar_bear",
+      "blaze",
+      "creeper",
+      "evoker",
+      "ghast",
+      "guardian",
+      "husk",
+      "magma_cube",
+      "shulker",
+      "silverfish",
+      "skeleton",
+      "slime",
+      "stray",
+      "vindicator",
+      "witch",
+      "wither_skeleton",
+      "zombie",
+      "zombie_villager"
+    ]
+  ]
+}

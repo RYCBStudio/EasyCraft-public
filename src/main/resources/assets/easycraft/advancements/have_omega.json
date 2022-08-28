@@ -1,0 +1,28 @@
+{
+  "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+  "display": {
+    "icon": {
+      "item": "easycraft:omega_gem"
+    },
+    "title": {
+      "translate": "advancements.ec.haveOmega.title"
+    },
+    "description": {
+      "translate": "advancements.ec.haveOmega.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "have_omega": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "item": {
+          "item": "easycraft:omega_gem"
+        }
+      }
+    }
+  }
+}

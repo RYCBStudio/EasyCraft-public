@@ -8,6 +8,9 @@
   "key": {
     "D": {
       "item": "easycraft:dark_ingot"
+    },
+    "C": {
+      "item": "minecraft:coal"
     }
   },
   "result": {

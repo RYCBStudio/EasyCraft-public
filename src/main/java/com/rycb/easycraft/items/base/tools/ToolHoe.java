@@ -31,7 +31,7 @@ public class ToolHoe extends ItemHoe implements IHasModel {
         setCreativeTab(tab);
         this.rarity = rarity;
         ModItems.ITEMS.add(this);
-        if (isUnbreakable) setMaxDamage(0);
+        if (isUnbreakable) setMaxDamage(0); setNoRepair();
         setNoRepair();
     }
 
