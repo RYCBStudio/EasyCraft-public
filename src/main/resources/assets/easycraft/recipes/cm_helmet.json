@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "item": "easycraft:sculk_ingot"
+    }
+  },
+  "result": {
+    "item": "easycraft:sculk_helmet",
+    "count": 1
+  }
+}

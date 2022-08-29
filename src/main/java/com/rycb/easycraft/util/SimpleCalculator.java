@@ -9,7 +9,7 @@ import java.util.Random;
  * <p>Location: EasyTech/com.rycb.easycraft.util/SimpleCalculator.java</p>
  * <h1><center>SimpleCalculator</center></h1>
  */
-public class SimpleCalculator {
+public final class SimpleCalculator {
 
     public static float getSimpleBurnXp() {
         float xp = new Random().nextFloat();

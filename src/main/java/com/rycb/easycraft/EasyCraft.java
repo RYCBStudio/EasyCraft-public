@@ -40,45 +40,13 @@ public class EasyCraft {
     @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
     public static CommonProxy proxy;
     public static CreativeTabs EC_TAB = new ECTab();
+    static Class<?> EasyTech = null;
 
     static {
         FluidRegistry.enableUniversalBucket();
     }
 
-    static Class<?> EasyTech = null;
-
-    @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) throws FindETException {
-        try {
-            EasyTech = Class.forName("com.rycb.etech.EasyTech");
-        } catch (Exception ignored) {
-        }
-        proxy.preInit(event);
-        LOGGER.info("{} for Minecraft {} is pre-initializing", Reference.NAME, Reference.MC_VERSION);
-//        findET(Situation.FIRST);
-    }
-
-    @Mod.EventHandler
-    public void init(FMLInitializationEvent event) throws FindETException {
-        OreDictHandler.init();
-        ModRecipes.init();
-        proxy.Init(event);
-        RegistryHandler.initRegistries();
-        GameRegistry.registerWorldGenerator(new ModWorldGen(), 2);
-        LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);
-//        findET(Situation.SECOND);
-    }
-
-    @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event) throws FindETException {
-        proxy.postInit(event);
-        LOGGER.info("{} for Minecraft {} is post-initializing", Reference.NAME, Reference.MC_VERSION);
-//        findET(Situation.LAST);
-    }
-
-    /**
-     * @deprecated
-     */
+    @Deprecated
     private static void findET(Situation situation) throws FindETException {
         switch (situation) {
             case FIRST:
@@ -99,10 +67,39 @@ public class EasyCraft {
                 }
         }
     }
+
+    @Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        try {
+            EasyTech = Class.forName("com.rycb.etech.EasyTech");
+        } catch (Exception ignored) {
+        }
+        proxy.preInit(event);
+        LOGGER.info("{} for Minecraft {} is pre-initializing", Reference.NAME, Reference.MC_VERSION);
+//        findET(Situation.FIRST);
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+        OreDictHandler.init();
+        ModRecipes.init();
+        proxy.Init(event);
+        RegistryHandler.initRegistries();
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 2);
+        LOGGER.info("{} for Minecraft {} is initializing", Reference.NAME, Reference.MC_VERSION);
+//        findET(Situation.SECOND)
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+        proxy.postInit(event);
+        LOGGER.info("{} for Minecraft {} is post-initializing", Reference.NAME, Reference.MC_VERSION);
+//        findET(Situation.LAST);
+    }
 }
 
 class FindETException extends Exception {
-    public FindETException(String msg) {
-        super(msg);
+    public FindETException(String errMsg) {
+        super(errMsg);
     }
 }

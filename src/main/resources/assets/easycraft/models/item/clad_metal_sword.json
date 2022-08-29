@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "easycraft:items/clad_metal_sword"
+  }
+}

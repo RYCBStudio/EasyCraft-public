@@ -3,6 +3,7 @@ item.gemRuby.name=Ruby
 
 item.ingotDark.name=Dark Ingot
 item.ingotSculk.name=Sculk Ingot
+item.ingotCM.name=Clad Metal
 
 item.dark_fuel.name=Dark Fuel
 
@@ -46,6 +47,16 @@ item.hoeSculk.name=Sculk Hoe
 item.pickaxeSculk.name=Sculk Pickaxe
 item.shovelSculk.name=Sculk Shovel
 item.swordSculk.name=Sculk Sword
+
+item.helmetCM.name=Clad Metal Helmet
+item.cplateCM.name=Clad Metal Chestplate
+item.leggingsCM.name=Clad Metal Leggings
+item.bootsCM.name=Clad Metal Boots
+item.axeCM.name=Clad Metal Axe
+item.hoeCM.name=Clad Metal Hoe
+item.pickaxeCM.name=Clad Metal Pickaxe
+item.shovelCM.name=Clad Metal Shovel
+item.swordCM.name=Clad Metal Sword
 
 tile.oreOmega.name=Omega Ore
 tile.oreDark.name=Dark Ore
